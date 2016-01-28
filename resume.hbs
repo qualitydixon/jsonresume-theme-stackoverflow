@@ -30,6 +30,7 @@
 
 					{{#location}}
 						<span class="location">
+							<span class="fa fa-map-marker"></span>
 							{{#if address}}
 								<span class="address">
 									{{address}},
@@ -58,7 +59,7 @@
 						</span>
 					{{/location}}
 
-                    <div>born in {{placeOfBird}}, {{stateOfBird}} in {{dateOfBird}}</div>
+                    <!--<div>born in {{placeOfBird}}, {{stateOfBird}} in {{dateOfBird}}</div>-->
 
 
 					<div id="contact">
@@ -158,7 +159,7 @@
 										{{#if @first}}
 											<span class="fa fa-caret-down"></span>
 										{{else}}
-											<span class="fa fa-caret-right"></span>
+											<span class="fa fa-caret-down"></span>
 										{{/if}}
 									</span>
 									{{#if position}}
@@ -225,13 +226,8 @@
 							{{#if @first}}
 								<div class="item display" style="opacity:1">
 							{{else}}
-								<div class="item display none" style="opacity:0">
+								<div class="item display" style="opacity:1">
 							{{/if}}
-								{{#if summary}}
-									<div class="summary">
-										<p>{{summary}}</p>
-									</div>
-								{{/if}}
 								{{#if highlights.length}}
 									<ul class="highlights">
 										{{#each highlights}}

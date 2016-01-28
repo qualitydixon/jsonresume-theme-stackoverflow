@@ -427,7 +427,8 @@ ul.courses li:hover {
     height: 5px;
 }
 
-.level.beginner .bar::after {
+.level.beginner .bar::after,
+.level.basic .bar::after {
     background: #EB5F51;
     width: 2.5em;
 }
@@ -438,6 +439,7 @@ ul.courses li:hover {
 }
 
 .level.advanced .bar::after,
+.level.adept .bar::after,
 .level.fluent .bar::after {
     background: #5CB85C;
     width: 7.5em;
